@@ -26,17 +26,19 @@ namespace martyna2
 
         public void Func(int end, int deep = 0)
         {
+            var str = "";
             for (int i = 0; i < 10; i++)
             {
                 if (end <= deep + 1)
                 {
                     for (int j = 0; j < 10; j++)
                     {
+                        str = "";
                         foreach (var var in List)
                         {
-                            Console.Write(var);
+                            str += var;
                         }
-                        Console.WriteLine(j);
+                        Console.WriteLine(str+j);
                     }
                 }
                 else
