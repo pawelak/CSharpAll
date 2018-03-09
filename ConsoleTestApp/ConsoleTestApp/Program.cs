@@ -11,7 +11,7 @@ namespace ConsoleTestApp
     {
         static void Main(string[] args)
         {
-            var howMuchNumbers = 3;
+            var howMuchNumbers = 4;
             var obj = new MartynaRecursionHw(howMuchNumbers);
             obj.Func(howMuchNumbers);
             Console.ReadKey();

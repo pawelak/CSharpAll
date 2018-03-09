@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,9 +17,9 @@ namespace martyna2
         public MartynaRecursionHw(int end)
         {
             List = new List<int>();
-            for (int i = 0; i < end - 1; i++)
+            for (int i = 0; i < end; i++)
             {
-                List.Add(0);
+                List.Add(11);
             }
         }
 
@@ -29,25 +30,38 @@ namespace martyna2
             var str = "";
             for (int i = 0; i < 10; i++)
             {
-                if (end <= deep + 1)
+                if (end - 1 <= deep)
                 {
-                    for (int j = 0; j < 10; j++)
+                    if ( !List.Contains(i))
                     {
+                        List[end - 1] = i;
                         str = "";
+
                         foreach (var var in List)
                         {
                             str += var;
                         }
-                        Console.WriteLine(str+j);
+
+                        Console.WriteLine(str);
                     }
                 }
                 else
                 {
-                    List[deep] = i;
-                    Func(end, deep + 1);
+                    if (List.Contains(i) && i < 10) 
+                    {
+                       
+                    }
+                    else
+                    {
+                        List[deep] = i;
+                        Func(end, deep + 1);
+
+                    }
                 }
 
             }
+
+            List[deep] = 11;
         }
 
     }
