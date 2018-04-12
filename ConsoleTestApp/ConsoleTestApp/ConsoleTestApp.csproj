@@ -42,9 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MartynaRecursionHw.cs" />
+    <Compile Include="TestProg\DocumentStore.cs" />
+    <Compile Include="TestProg\Graph.cs" />
+    <Compile Include="TestProg\Kata.cs" />
+    <Compile Include="TestProg\MartynaRecursionHw.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestProg\InsERT.cs" />
+    <Compile Include="TestProg\test.cs" />
+    <Compile Include="TestProg\test2.cs" />
+    <Compile Include="TestProg\MatryoshkaDoll.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

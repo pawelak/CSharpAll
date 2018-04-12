@@ -1,13 +1,7 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace martyna2
+namespace ConsoleTestApp.TestProg
 {
     class MartynaRecursionHw
     {
@@ -66,3 +60,9 @@ namespace martyna2
 
     }
 }
+
+
+//Run
+//var howMuchNumbers = 4;
+//var obj = new MartynaRecursionHw(howMuchNumbers);
+//obj.Func(howMuchNumbers);
